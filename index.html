@@ -7,9 +7,8 @@
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
-    <!-- Font awesome cdn -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+     <!-- Font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Tailwind + Daisy ui cdn -->
@@ -17,8 +16,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
-        .inter-font {
-                font-family: "Inter", sans-serif;
+        .manrope-font {
+         font-family: "Manrope", sans-serif;
+ 
         }
     </style>
     
@@ -27,20 +27,30 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
-                bike_primary: '#E76F51',
-                bike_primary_bg: 'rgba(231, 111, 81, 0.1)',
+                primary: 'rgb(255, 255, 255);',
+                secondary: '#f4f4f4;',
+                btn_primary: 'rgb(171, 239, 95)',
+                btn_secondary: 'rgba(171, 239, 95, 0.5)',
+                textPrimary: 'rgb(33, 33, 33)',
+                textSecondary: 'rgb(73, 73, 73)',
+                textThird: 'rgb(115, 115, 115)',
+                footerPrimary: 'rgb(28, 28, 28)',
+                cardBlue: 'rgb(119, 170, 234)',
+                cardGreen: 'rgb(164, 218, 195)',
+                cardYellow: 'rgb(239, 218, 110)',
+                cardpinky: 'rgb(231, 193, 211)',
+
               },
             },
           },
         }
       </script>
 </head>
-<body class="inter-font">
+<body class="manrope-font">
     <header>
       <!-- Nav bar section -->
       <div class="navbar w-11/12 mx-auto">
-        <div class="navbar-start">
+        <div class="navbar-start ">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
               <svg
@@ -85,7 +95,7 @@
         <div class="navbar-end flex justify-center items-center gap-5">
           <i class="p-3 rounded-full bg-slate-100 fa-solid fa-magnifying-glass"></i>
           <i class="p-3 rounded-full bg-slate-100 fa-solid fa-cart-shopping"></i>
-          <div class="btn rounded-3xl bg-green-400 text-black">
+          <div class="btn rounded-3xl bg-bike_primary_bg text-black">
             <a class="">Book consult
             <i class="fa-solid fa-circle-arrow-up rotate-45 text-black"></i>
             </a>
