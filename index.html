@@ -53,33 +53,32 @@
       </script>
 </head>
 <body class="manrope-font">
-    <header class="bg-gradient-to-b from-primary to-[rgba(255,255,255,0)]">
+    <header class="bg-gradient-to-t from-primary to-[rgba(255,255,255,0.1)]">
       <!-- Nav bar section -->
-      <div class="navbar hidden w-11/12 mx-auto ">
-        <div class="navbar-start text-3xl flex items-center gap-3">
+      <div class="navbar  w-11/12 mx-auto">
+        <div class="navbar-start  flex items-center gap-3">
           
-          <i class="fa-solid fa-circle-arrow-up rotate-45 text-btn_primary text-2xl"></i>
-          <a class=" font-extrabold text-textPrimary ">Rinterio</a>
+          <span class="w-8 h-8 flex justify-center items-center rounded-full bg-btn_primary rotate-45 text-xl"> <i class="fa-solid fa-arrow-up  text-textPrimary "></i></span>
+          <a class=" font-extrabold text-textPrimary text-3xl">Rinterio</a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
             <li><a class="hover:font-bold ease-in-out duration-300"  href="#" >Service</a></li>
-            <li><a class="hover:text-textPrimary ease-in-out duration-300"  href="#" >Home </a></li>
-            <li><a class="hover:text-textPrimary ease-in-out duration-300"  href="#" >Portfolio</a></li>
-            <li><a class="hover:text-textPrimary ease-in-out duration-300"  href="#" >Blogs</a></li>
-            <li><a class="hover:text-textPrimary ease-in-out duration-300"  href="#" >Contact</a></li>
+            <li><a class="hover:font-bold ease-in-out duration-300"  href="#" >Home </a></li>
+            <li><a class="hover:font-bold ease-in-out duration-300"  href="#" >Portfolio</a></li>
+            <li><a class="hover:font-bold ease-in-out duration-300"  href="#" >Blogs</a></li>
+            <li><a class="hover:font-bold ease-in-out duration-300"  href="#" >Contact</a></li>
           </ul>
         </div>
-        <div class="navbar-end flex justify-center items-center gap-5">
-          <i class="p-3 rounded-full bg-slate-100 fa-solid fa-magnifying-glass"></i>
-          <i class="p-3 rounded-full bg-slate-100 fa-solid fa-cart-shopping"></i>
-          <div class="btn rounded-3xl bg-bike_primary_bg text-black">
-            <a class="">Book consult
-            <i class="fa-solid fa-circle-arrow-up rotate-45 text-black"></i>
-            </a>
+        <div class=" hidden  md:flex justify-center items-center gap-2">
+          <i class="p-3 text-textSecondary rounded-full bg-gray-50 fa-solid fa-magnifying-glass"></i>
+          <i class="p-3 text-textSecondary rounded-full bg-gray-50 fa-solid fa-cart-shopping"></i>
+          <div class="btn rounded-3xl bg-btn_primary text-black">
+            <a class="flex items-center gap-3 text-xl font-extrabold">Book consult
+              <span class="w-8 h-8 flex justify-center items-center rounded-full bg-textPrimary rotate-45"> <i class="fa-solid fa-arrow-up  text-white "></i></span></a>
           </div>
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <div class="dropdown  ">
+            <div tabindex="0" role="button" class="btn btn-ghost  lg:hidden">
               <i class="fa-solid fa-bars"></i>
             </div>
             <ul
@@ -97,14 +96,14 @@
       <!-- Hero section  -->
       <div class="hero  w-11/12 mx-auto border-red-800">
         <div class="hero-content text-center flex-col p-0 items-center justify-center ">
-          <div class="flex-1 border-red-600">
+          <div class="flex-1 border-red-600 flex justify-center items-center">
             <img class="w-4/5 h-[300px] border-red-600" src="./assets/banner.png" alt="">
           </div>
           <div class="flex-1">
-            <h1 class="text-6xl font-extrabold text-textPrimary">A barn house of this design has a striking appearance</h1>
+            <h1 class=" text-[9vw] md:text-6xl font-extrabold text-textPrimary">A barn house of this design has a striking appearance</h1>
             <p class="my-3">
               The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.            </p>
-            <button class="btn bg-btn_secondary text-textPrimary font-bold text-xl rounded-full">View Details <i class="fa-solid fa-circle-arrow-up rotate-45 text-btn_primary  text-2xl"></i></button>
+            <button class="btn bg-btn_secondary text-textPrimary font-bold text-xl rounded-full">View Details <span class="w-8 h-8 flex justify-center items-center rounded-full bg-btn_primary rotate-45"> <i class="fa-solid fa-arrow-up  text-textPrimary "></i></span></button>
           </div>
         </div>
       </div>
