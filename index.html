@@ -16,10 +16,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
+        *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
         .manrope-font {
          font-family: "Manrope", sans-serif;
  
         }
+        
     </style>
     
     <script>
@@ -47,49 +53,21 @@
       </script>
 </head>
 <body class="manrope-font">
-    <header>
+    <header class="bg-gradient-to-b from-primary to-[rgba(255,255,255,0)]">
       <!-- Nav bar section -->
-      <div class="navbar w-11/12 mx-auto">
-        <div class="navbar-start ">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16" />
-              </svg>
-            </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-              <li><a>Item 1</a></li>
-              <li>
-                <a>Parent</a>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
-              </li>
-              <li><a>Item 3</a></li>
-            </ul>
-          </div>
-          <i class="fa-solid fa-circle-arrow-up rotate-45 text-black"></i>
-          <a class="btn btn-ghost text-xl">Rinterio</a>
+      <div class="navbar hidden w-11/12 mx-auto ">
+        <div class="navbar-start text-3xl flex items-center gap-3">
+          
+          <i class="fa-solid fa-circle-arrow-up rotate-45 text-btn_primary text-2xl"></i>
+          <a class=" font-extrabold text-textPrimary ">Rinterio</a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
-            <li><a  href="#" >Home </a></li>
-            <li><a  href="#" >Service</a></li>
-            <li><a  href="#" >Portfolio</a></li>
-            <li><a  href="#" >Blogs</a></li>
-            <li><a  href="#" >Contact</a></li>
+            <li><a class="hover:font-bold ease-in-out duration-300"  href="#" >Service</a></li>
+            <li><a class="hover:text-textPrimary ease-in-out duration-300"  href="#" >Home </a></li>
+            <li><a class="hover:text-textPrimary ease-in-out duration-300"  href="#" >Portfolio</a></li>
+            <li><a class="hover:text-textPrimary ease-in-out duration-300"  href="#" >Blogs</a></li>
+            <li><a class="hover:text-textPrimary ease-in-out duration-300"  href="#" >Contact</a></li>
           </ul>
         </div>
         <div class="navbar-end flex justify-center items-center gap-5">
@@ -99,6 +77,34 @@
             <a class="">Book consult
             <i class="fa-solid fa-circle-arrow-up rotate-45 text-black"></i>
             </a>
+          </div>
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+              <li><a  href="#" >Home </a></li>
+              <li><a  href="#" >Service</a></li>
+              <li><a  href="#" >Portfolio</a></li>
+              <li><a  href="#" >Blogs</a></li>
+              <li><a  href="#" >Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Hero section  -->
+      <div class="hero  w-11/12 mx-auto border-red-800">
+        <div class="hero-content text-center flex-col p-0 items-center justify-center ">
+          <div class="flex-1 border-red-600">
+            <img class="w-4/5 h-[300px] border-red-600" src="./assets/banner.png" alt="">
+          </div>
+          <div class="flex-1">
+            <h1 class="text-6xl font-extrabold text-textPrimary">A barn house of this design has a striking appearance</h1>
+            <p class="my-3">
+              The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.            </p>
+            <button class="btn bg-btn_secondary text-textPrimary font-bold text-xl rounded-full">View Details <i class="fa-solid fa-circle-arrow-up rotate-45 text-btn_primary  text-2xl"></i></button>
           </div>
         </div>
       </div>
