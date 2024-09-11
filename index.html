@@ -41,6 +41,7 @@
                 textSecondary: 'rgb(73, 73, 73)',
                 textThird: 'rgb(115, 115, 115)',
                 footerPrimary: 'rgb(28, 28, 28)',
+                footerSecondary: 'rgb(233, 233, 233)',
                 cardBlue: 'rgb(119, 170, 234)',
                 cardGreen: 'rgb(164, 218, 195)',
                 cardYellow: 'rgb(239, 218, 110)',
@@ -74,28 +75,31 @@
             <li><a class="hover:font-bold ease-in-out duration-300"  href="#" >Contact</a></li>
           </ul>
         </div>
-        <div class=" hidden  md:flex justify-center items-center gap-2">
-          <i class="p-3 text-textSecondary rounded-full bg-gray-50 fa-solid fa-magnifying-glass"></i>
-          <i class="p-3 text-textSecondary rounded-full bg-gray-50 fa-solid fa-cart-shopping"></i>
-          <div class="btn rounded-3xl bg-btn_primary text-black">
-            <a class="flex items-center gap-3 text-xl font-extrabold">Book consult
-              <span class="w-8 h-8 flex justify-center items-center rounded-full bg-textPrimary rotate-45"> <i class="fa-solid fa-arrow-up  text-white "></i></span></a>
-          </div>
-          <div class="dropdown  ">
-            <div tabindex="0" role="button" class="btn btn-ghost  lg:hidden">
-              <i class="fa-solid fa-bars"></i>
+        <div class="navbar-end">
+          <div class="  hidden  md:flex justify-center items-center gap-2">
+            <i class="p-3 text-textSecondary rounded-full bg-gray-50 fa-solid fa-magnifying-glass"></i>
+            <i class="p-3 text-textSecondary rounded-full bg-gray-50 fa-solid fa-cart-shopping"></i>
+            <div class="btn rounded-3xl bg-btn_primary text-black">
+              <a class="flex items-center gap-3 text-xl font-extrabold">Book consult
+                <span class="w-8 h-8 flex justify-center items-center rounded-full bg-textPrimary rotate-45"> <i class="fa-solid fa-arrow-up  text-white "></i></span></a>
             </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
-              <li><a  href="#" >Home </a></li>
-              <li><a  href="#" >Service</a></li>
-              <li><a  href="#" >Portfolio</a></li>
-              <li><a  href="#" >Blogs</a></li>
-              <li><a  href="#" >Contact</a></li>
-            </ul>
-          </div>
+          </div> 
+            <div class="dropdown  ">
+              <div tabindex="0" role="button" class="btn btn-ghost  lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                <li><a  href="#" >Home </a></li>
+                <li><a  href="#" >Service</a></li>
+                <li><a  href="#" >Portfolio</a></li>
+                <li><a  href="#" >Blogs</a></li>
+                <li><a  href="#" >Contact</a></li>
+              </ul>
+            </div>
         </div>
+
       </div>
       <!-- Hero section  -->
       <div class="hero  w-11/12 mx-auto h-[600px">
@@ -192,7 +196,7 @@
       </div>
      </div>
      <!-- section Work process -->
-     <div class="mt-28">
+     <div class="mt-28 w-11/12 mx-auto">
       <!-- Work process title -->
      
         <div class="flex flex-col items-center justify-center text-center gap-6">
@@ -240,60 +244,95 @@
             </p>
            </div>
         </div>
-    <!-- Form section -->
+   
+     </div>
 
-        <div class="mt-4">
-          <div class="bg-form_bg bg-no-repeat bg-cover py-24 ">
-            <div class="text-center">
-             <div class="text-sm  space-x-2 inline-block px-4 py-2 bg-btn_secondary rounded-full">
-               <i class="fa-solid fa-arrow-right text-text_secondary "></i>
-               <span class="text-text_secondary font-bold text-base">Let's Connect</span>
-             </div>
-             <h2 class="text-4xl text-textPrimary font-bold mb-6">Let's Discuss Next Project</h2>
-             <p class="text-base text-textSecondary font-medium">
-               The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.
-             </p>
+      <!-- Form section -->
+      <div class="mt-4 ">
+        <div class="bg-form_bg bg-no-repeat bg-cover py-24 ">
+          <div class="text-center">
+           <div class="text-sm  space-x-2 inline-block px-4 py-2 bg-btn_secondary rounded-full">
+             <i class="fa-solid fa-arrow-right text-text_secondary "></i>
+             <span class="text-text_secondary font-bold text-base">Let's Connect</span>
            </div>
-       
-           <form class="md:w-4/5 mx-auto gap-6 grid grid-cols-12 grid-rows-12 mt-6">
-               <!-- First Name -->
+           <h2 class="text-4xl text-textPrimary font-bold mb-6">Let's Discuss Next Project</h2>
+           <p class="text-base text-textSecondary font-medium">
+             The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.
+           </p>
+         </div>
+     
+         <form class="md:w-4/5 mx-auto gap-6 grid grid-cols-12 grid-rows-12 mt-6">
+             <!-- First Name -->
+             <div class=" col-span-12 md:col-span-6 row-span-2 ">
+              <input type="text" id="first-name" placeholder="First Name*" class="p-5  w-full border border-gray-300 rounded-full shadow-sm  sm:text-sm">
+            </div> 
+             <!-- Last Name -->
                <div class=" col-span-12 md:col-span-6 row-span-2 ">
-                <input type="text" id="first-name" placeholder="First Name*" class="p-5  w-full border border-gray-300 rounded-full shadow-sm  sm:text-sm">
-              </div> 
-               <!-- Last Name -->
-                 <div class=" col-span-12 md:col-span-6 row-span-2 ">
-                   <input type="text" id="last-name" placeholder="Last Name*" class="p-5  w-full border border-gray-300 rounded-full shadow-sm  sm:text-sm">
-                 </div> 
-              
-               <!-- Phone Number -->
-               
-                 <div class="col-span-12 md:col-span-6 row-span-2 ">
-                   <input type="text" id="phone" placeholder="Phone Number*" class="p-5  w-full border border-gray-300 rounded-full shadow-sm  sm:text-sm">
-                 </div> 
-
-               <!-- Email -->
-               <div class="col-span-12 md:col-span-6 row-span-2" >
-                   <input type="email" id="email" placeholder="Email Number*" class="p-5  w-full border border-gray-300 rounded-full shadow-sm  sm:text-sm"> 
-               </div>
-             <!-- Message field -->
-             <textarea id="message" rows="6" placeholder="Write your message here" class=" col-span-12 row-span-6 w-full border border-gray-300 rounded-3xl shadow-sm 0 sm:text-sm"></textarea>
+                 <input type="text" id="last-name" placeholder="Last Name*" class="p-5  w-full border border-gray-300 rounded-full shadow-sm  sm:text-sm">
+               </div> 
+            
+             <!-- Phone Number -->
              
-             <!-- Submit button -->
-             <div type="submit" class="w-full col-span-12 row-span-2 bg-btn_primary text-footerPrimary p-3 rounded-full  hover:bg-btn_secondary font-extrabold text-xl ">
-       
-               <span class="flex gap-3 items-center justify-center">Send Mail <i class="fa-solid fa-arrow-up w-8 h-8 flex justify-center items-center rounded-full bg-textPrimary rotate-45 text-white "></i></span>
+               <div class="col-span-12 md:col-span-6 row-span-2 ">
+                 <input type="text" id="phone" placeholder="Phone Number*" class="p-5  w-full border border-gray-300 rounded-full shadow-sm  sm:text-sm">
+               </div> 
+
+             <!-- Email -->
+             <div class="col-span-12 md:col-span-6 row-span-2" >
+                 <input type="email" id="email" placeholder="Email Number*" class="p-5  w-full border border-gray-300 rounded-full shadow-sm  sm:text-sm"> 
              </div>
-           </form>
+           <!-- Message field -->
+           <textarea id="message" rows="6" placeholder="Write your message here" class=" col-span-12 row-span-6 w-full border border-gray-300 rounded-3xl shadow-sm 0 sm:text-sm"></textarea>
+           
+           <!-- Submit button -->
+           <div type="submit" class="w-full col-span-12 row-span-2 bg-btn_primary text-footerPrimary p-3 rounded-full  hover:bg-btn_secondary font-extrabold text-xl ">
+     
+             <span class="flex gap-3 items-center justify-center">Send Mail <i class="fa-solid fa-arrow-up w-8 h-8 flex justify-center items-center rounded-full bg-textPrimary rotate-45 text-white "></i></span>
+           </div>
+         </form>
+        </div>
+      </div>
+    
+    </main>
+    <footer>
+      <div class="bg-footerPrimary flex flex-col items-center justify-center text-center gap-y-12 py-24">
+        <!-- footer title -->
+        <div class="flex flex-col items-center justify-center gap-y-4">
+          <div class="  flex items-center gap-3">
+          
+            <span class="w-8 h-8 flex justify-center items-center rounded-full bg-btn_primary rotate-45 "> <i class="fa-solid fa-arrow-up  text-textPrimary text-2xl font-semibold "></i></span>
+            <a class=" font-extrabold text-primary text-3xl">Rinterio</a>
+          </div>
+          <p class="text-base text-textThird font-medium">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
+        </div>
+        <!-- menu bar -->
+        <div >
+          <ul class=" flex flex-col gap-8 md:flex-row md:gap-24 font-normal text-base text-footerSecondary ">
+            <li>
+              <a class="hover:font-bold ease-in-out duration-300"  href="#" >Service</a>
+            </li>
+            <li>
+              <a class="hover:font-bold ease-in-out duration-300"  href="#" >Home </a>
+            </li>
+            <li>
+              <a class="hover:font-bold ease-in-out duration-300"  href="#" >Portfolio</a>
+            </li>
+            <li>
+              <a class="hover:font-bold ease-in-out duration-300"  href="#" >Blogs</a>
+            </li>
+            <li>
+              <a class="hover:font-bold ease-in-out duration-300"  href="#" >Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- btn -->
+        <div  >
+          <div class="btn rounded-3xl bg-btn_primary border-none hover:bg-btn_secondary text-black ">
+            <a class="flex items-center gap-3 text-xl font-extrabold">Book consult
+              <span class="w-8 h-8 flex justify-center items-center rounded-full bg-textPrimary rotate-45"> <i class="fa-solid fa-arrow-up  text-white "></i></span></a>
           </div>
         </div>
-  </div>
-</section>
-
-          
-      
-        
-
-     </div>
-    </main>
+      </div>
+    </footer>
 </body>
 </html>
